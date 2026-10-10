@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل ومعلومات التأشيرة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card-container {
+            width: 100%;
+            max-width: 850px;
+            background: rgba(30, 41, 59, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #10b981;
+            margin-bottom: 6px;
+        }
+
+        .header p {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* عرض صورة التأشيرة */
+        .image-wrapper {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            border: 2px solid rgba(16, 185, 129, 0.3);
+            text-align: center;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
+
+        /* تفاصيل التأشيرة */
+        .info-card {
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .info-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #f8fafc;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .info-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 12px 16px;
+            border-radius: 10px;
+            border-right: 4px solid #10b981;
+        }
+
+        .info-label {
+            font-size: 13px;
+            color: #94a3b8;
+        }
+
+        .info-value {
+            font-size: 15px;
+            font-weight: 700;
+            color: #f1f5f9;
+        }
+
+        /* العداد التنازلي */
+        .countdown-card {
+            margin-top: 25px;
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(5, 150, 105, 0.3);
+        }
+
+        .countdown-header {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #ecfdf5;
+        }
+
+        .countdown-boxes {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .time-box {
+            background: rgba(0, 0, 0, 0.25);
+            padding: 12px 16px;
+            border-radius: 12px;
+            min-width: 70px;
+            backdrop-filter: blur(4px);
+        }
+
+        .time-value {
+            font-size: 22px;
+            font-weight: 900;
+            color: #ffffff;
+        }
+
+        .time-label {
+            font-size: 12px;
+            color: #a7f3d0;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="header">
+            <h1>بيانات التأشيرة ومتابعة المدة</h1>
+            <p>المملكة العربية السعودية</p>
+        </div>
+
+        <div class="content-grid">
+            <!-- عرض الصورة -->
+            <div class="image-wrapper">
+                <!-- تأكد من وضع مسار أو اسم الصورة الصحيح هنا -->
+                <img src="image_2.png" alt="معلومات التأشيرة">
+            </div>
+
+            <!-- عرض التفاصيل المعالجة -->
+            <div class="info-card">
+                <div class="info-title">
+                    📄 تفاصيل التأشيرة
+                </div>
+                <div class="info-group">
+                    <div class="info-item">
+                        <span class="info-label">رقم التأشيرة</span>
+                        <span class="info-value">211232241</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">نوع التأشيرة</span>
+                        <span class="info-value">تأشيرة خروج وعودة متعددة</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">الخروج من المملكة قبل</span>
+                        <span class="info-value">2026/09/27</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">المدة المحددة</span>
+                        <span class="info-value">180 يوم</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">تاريخ نهاية التأشيرة</span>
+                        <span class="info-value" style="color: #34d399;">2027/03/26</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- العداد التنازلي -->
+        <div class="countdown-card">
+            <div class="countdown-header">⏳ الوقت المتبقي على انتهاء مدة التأشيرة (180 يوماً)</div>
+            <div class="countdown-boxes" id="timer">
+                <div class="time-box">
+                    <div class="time-value" id="days">--</div>
+                    <div class="time-label">يوم</div>
+                </div>
+                <div class="time-box">
+                    <div class="time-value" id="hours">--</div>
+                    <div class="time-label">ساعة</div>
+                </div>
+                <div class="time-box">
+                    <div class="time-value" id="minutes">--</div>
+                    <div class="time-label">دقيقة</div>
+                </div>
+                <div class="time-box">
+                    <div class="time-value" id="seconds">--</div>
+                    <div class="time-label">ثانية</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // تاريخ البداية: 2026/09/27
+        // مدة التأشيرة: 180 يوم
+        // تاريخ الانتهاء المحسوب: 26 مارس 2027
+        const startDate = new Date("2026-09-27T00:00:00");
+        const expiryDate = new Date(startDate);
+        expiryDate.setDate(expiryDate.getDate() + 180);
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = expiryDate.getTime() - now;
+
+            if (distance < 0) {
+                document.getElementById("timer").innerHTML = "<div style='color:#fca5a5; font-weight:bold; font-size:18px;'>انتهت مدة التأشيرة المحدد (180 يوماً)</div>";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
