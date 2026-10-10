@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>معلومات هوية مقيم - السعودية</title>
+    <title> Saudi Iqama   /title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <style>
         * {
@@ -20,41 +20,41 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 15px;
+            padding: 20px;
         }
 
         .container {
             width: 100%;
-            max-width: 950px;
-            background: rgba(30, 41, 59, 0.85);
+            max-width: 900px;
+            background: rgba(30, 41, 59, 0.7);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
 
         .header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .header h1 {
-            font-size: 20px;
+            font-size: 24px;
             color: #38bdf8;
-            margin-bottom: 4px;
+            margin-bottom: 5px;
         }
 
         .header p {
             color: #94a3b8;
-            font-size: 13px;
+            font-size: 14px;
         }
 
         .content-grid {
             display: grid;
             grid-template-columns: 1fr 1.2fr;
-            gap: 20px;
-            align-items: start;
+            gap: 25px;
+            align-items: center;
         }
 
         @media (max-width: 768px) {
@@ -63,69 +63,51 @@
             }
         }
 
+        /* بطاقة الهوية */
         .id-card-wrapper {
             display: flex;
             justify-content: center;
-            width: 100%;
         }
 
         .id-card {
             width: 100%;
-            max-width: 340px;
+            max-width: 380px;
             background: #fff;
-            border-radius: 14px;
+            color: #1e293b;
+            border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-            border: 3px solid #d4af37;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            /* تم تعديل الدوران ليظهر بالصورة الصحيحة */
+            transform: rotate(0deg); 
+            border: 4px solid #d4af37;
         }
 
         .id-card img {
             width: 100%;
             height: auto;
             display: block;
-            transform: rotate(90deg);
-            max-width: 100%;
-            margin: 35px 0;
+            transform: rotate(90deg); /* تعديل اتجاه الصورة الأصلية المرفقة مقلوبة */
+            margin: 40px 0;
         }
 
-        @media (max-width: 768px) {
-            .id-card {
-                max-width: 280px;
-            }
-            .id-card img {
-                margin: 25px 0;
-            }
-        }
-
+        /* معلومات الإقامة */
         .info-section {
-            background: rgba(15, 23, 42, 0.7);
-            border-radius: 14px;
-            padding: 15px;
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 16px;
+            padding: 20px;
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .info-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-
-        @media (max-width: 480px) {
-            .info-grid {
-                grid-template-columns: 1fr;
-            }
-            .info-item.full-width {
-                grid-column: span 1 !important;
-            }
+            gap: 12px;
         }
 
         .info-item {
             background: rgba(255, 255, 255, 0.03);
-            padding: 8px 12px;
-            border-radius: 8px;
+            padding: 10px 14px;
+            border-radius: 10px;
             border-right: 3px solid #38bdf8;
         }
 
@@ -134,56 +116,55 @@
         }
 
         .info-label {
-            font-size: 11px;
+            font-size: 12px;
             color: #94a3b8;
             margin-bottom: 2px;
         }
 
         .info-value {
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 700;
             color: #f1f5f9;
-            word-break: break-word;
         }
 
+        /* العداد التنازلي */
         .countdown-container {
-            margin-top: 20px;
+            margin-top: 25px;
             background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
-            border-radius: 14px;
-            padding: 15px;
+            border-radius: 16px;
+            padding: 20px;
             text-align: center;
-            box-shadow: 0 6px 15px rgba(2, 132, 199, 0.3);
+            box-shadow: 0 8px 20px rgba(2, 132, 199, 0.3);
         }
 
         .countdown-title {
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 600;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             color: #e0f2fe;
         }
 
         .countdown-timers {
             display: flex;
             justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
+            gap: 15px;
         }
 
         .time-box {
             background: rgba(0, 0, 0, 0.25);
-            padding: 8px 12px;
-            border-radius: 10px;
-            min-width: 55px;
+            padding: 10px 15px;
+            border-radius: 12px;
+            min-width: 65px;
         }
 
         .time-number {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 900;
             color: #fff;
         }
 
         .time-text {
-            font-size: 10px;
+            font-size: 11px;
             color: #bae6fd;
             margin-top: 2px;
         }
@@ -193,8 +174,114 @@
 
     <div class="container">
         <div class="header">
-            <h1>بيانات هوية مقيم</h1>
-            <p>وزارة الداخلية - المملكة العربية السعودية</p>
+            <h1>نظام إدارة بيانات المقيمين</h1>
+            <p>المملكة العربية السعودية - وزارة الداخلية</p>
         </div>
 
-        <div class
+        <div class="content-grid">
+            <!-- عرض صورة الإقامة -->
+            <div class="id-card-wrapper">
+                <div class="id-card">
+                    <!-- ضع رابط الصورة أو مسارها الصحيح هنا -->
+                    <img src="image.png" alt="بطاقة هوية مقيم">
+                </div>
+            </div>
+
+            <!-- معلومات الإقامة -->
+            <div class="info-section">
+                <div class="info-grid">
+                    <div class="info-item full-width">
+                        <div class="info-label">الاسم الكامل</div>
+                        <div class="info-value">سامر جوده نصر السعدني (SAMER GODH NASR ELSAADNY)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">رقم الهوية</div>
+                        <div class="info-value">٢٤٣٩٨٦٧٢٥٦[span_1](start_span)[span_1](end_span)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">الجنسية</div>
+                        <div class="info-value">مصر[span_2](start_span)[span_2](end_span)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">تاريخ الميلاد</div>
+                        <div class="info-value">١٩٨١/٠٧/٠٧[span_3](start_span)[span_3](end_span)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">مكان الميلاد</div>
+                        <div class="info-value">مصر[span_4](start_span)[span_4](end_span)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">المهنة</div>
+                        <div class="info-value">مهندس ميكانيكي[span_5](start_span)[span_5](end_span)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">الديانة</div>
+                        <div class="info-value">الاسلام[span_6](start_span)[span_6](end_span)</div>
+                    </div>
+                    <div class="info-item full-width">
+                        <div class="info-label">اسم صاحب العمل</div>
+                        <div class="info-value">شركة العلم لامن المعلومات[span_7](start_span)[span_7](end_span)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">تاريخ الانتهاء</div>
+                        <div class="info-value" style="color: #38bdf8;">٢٠٢٧/٠٤/٢٠ (هجري/ميلادي)[span_8](start_span)[span_8](end_span)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">مكان الإصدار</div>
+                        <div class="info-value">منطقة الرياض[span_9](start_span)[span_9](end_span)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- العداد التنازلي -->
+        <div class="countdown-container">
+            <div class="countdown-title">⏳ العداد التنازلي لموعد انتهاء الإقامة (٢٠ أبريل ٢٠٢٧)</div>
+            <div class="countdown-timers" id="countdown">
+                <div class="time-box">
+                    <div class="time-number" id="days">--</div>
+                    <div class="time-text">يوم</div>
+                </div>
+                <div class="time-box">
+                    <div class="time-number" id="hours">--</div>
+                    <div class="time-text">ساعة</div>
+                </div>
+                <div class="time-box">
+                    <div class="time-number" id="minutes">--</div>
+                    <div class="time-text">دقيقة</div>
+                </div>
+                <div class="time-box">
+                    <div class="time-number" id="seconds">--</div>
+                    <div class="time-text">ثانية</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // تاريخ انتهاء الإقامة: 20 أبريل 2027
+        const targetDate = new Date("April 20, 2027 23:59:59").getTime();
+
+        const timer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance < 0) {
+                clearInterval(timer);
+                document.getElementById("countdown").innerHTML = "<div style='color:#fca5a5; font-weight:bold; font-size:18px;'>انتهت صلاحية الإقامة</div>";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+        }, 1000);
+    </script>
+</body>
+</html>
